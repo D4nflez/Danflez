@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Playwrite+ES+Deco:wght@100..400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+<head >
+
+    <!-- Especifica el tipo de documento y la versión de HTML -->
+    <meta charset="UTF-8">
+    <!-- Configura el viewport para que el sitio sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>ToyColeccionando Website</title>
+
+    <!-- STYLESHEET -->
+    
+</head>
+<body>
+
+    <!-- Sección de encabezado del sitio -->
+    <header>
+<img src="mono.png" width="200px">
+    </header>
+    <!-- Barra de navegación con enlaces -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutMe.html">Compra y Venta</a></li>
+            <li>
+               <a href="contact.html">Contactanos</a>
+                <ul>
+ <li><a href="https://www.instagram.com/toycoleccionandodgo/">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/toycoleccionandodgo?locale=es_LA">Facebook</a></li>
+                </ul></li>
+        </ul>
+    </nav>
+    <!-- Contenido principal de la página -->
+    <main>
+        <section>
+            <h2>Visita nuestras redes sociales</h2>
+            <p>Solo da Click en el icono de la red social al que quieras visitar</p>
+           
+            <p>
+            </p>
+            <a href="https://www.instagram.com/toycoleccionandodgo/"> <img src="instagram.png"> </a> 
+            <a href="https://www.facebook.com/toycoleccionandodgo?locale=es_LA"> <img src="facebook.png"> </a>
+        </section>
+<section>
+<h1>Visita nuestra Sucursal en Durango</h1>
+    <p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.160093321939!2d-104.62016108846133!3d23.990123179440214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869bb833da45df2b%3A0x2392fefbf317535!2sUniversidad%20Tecnol%C3%B3gica%20de%20Durango!5e0!3m2!1ses!2smx!4v1721364351617!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </p>
+</section>
+    </main>
+    <!-- Pie de página del sitio -->
+    <footer>
+        <p>&copy; ToyColeccionando</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let slideIndex = 0; // Inicializa el índice de las imágenes
+
+            // Obtiene todas las imágenes del slider
+            const slides = document.querySelectorAll(".slider-item");
+            const totalSlides = slides.length; // Calcula el número total de imágenes
+
+            // Función para mostrar las imágenes del slider
+            function showSlides() {
+                slides.forEach(slide => {
+                    slide.style.display = "none"; // Oculta todas las imágenes
+                });
+
+                slideIndex++; // Aumenta el índice de la imagen actual
+                if (slideIndex > totalSlides) { slideIndex = 1; } // Reinicia el índice si es mayor que el número total de imágenes
+
+                slides[slideIndex - 1].style.display = "block"; // Muestra la imagen actual
+                setTimeout(showSlides, 2000); // Cambia de imagen cada 2 segundos
+            }
+
+            showSlides(); // Inicia la función para mostrar las imágenes
+        });
+    </script>
+    
+</body>
+</html>
